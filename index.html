@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Gorjeta</title>
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+</head>
+<body>
+    <header id="header">
+        <h1>App Gorjeta</h1>
+    </header>
+
+    <main id="main">
+        <form>
+            <fieldset>
+                <span>Valor</span>
+                <input type="number" name="valorCompra" id="valorCompra" class="ValorQtd">
+                <div id="porcCustom">
+                    <p>Selecione %</p>
+                    <div id="btnsCustom">
+                        <button id="por5" value="5">5%</button>
+                        <button id="por10" value="10">10%</button>
+                        <button id="por15" value="15">15%</button>
+                        <button id="por20" value="20">20%</button>
+                        <button id="por30" value="30">30%</button>
+                        <button id="custom" value="custom">custom</button>
+                        <input type="number" name="inputValorPorcentagem" id="inputValorPorcentagem">
+                    </div>
+                </div>
+                <span>Quantidade de pessoas</span>
+                <input type="number" name="inputQtdPessoas" id="inputQtdPessoas" class="ValorQtd">
+
+            </fieldset>
+            <fieldset id="output">
+                <div class="showValores">
+                    <span>valor total</span>
+                    <span id="ShowValorGorjeta">00,00</span>
+                </div>
+                <div class="showValores">
+                    <span>valor Individual</span>
+                    <span id="ShowValorGorjetaPessoa">00,00</span>
+                </div>
+                <input type="submit" value="Calcular Gorjeta" id="calGorjetaBtn">
+            </fieldset>
+            
+        </form>
+
+    </main>
+
+    <script src="JS/main.mjs" type="module"></script>
+</body>
+</html>
